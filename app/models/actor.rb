@@ -1,5 +1,4 @@
 class Actor < ApplicationRecord
-  has_many :character, dependent: :destroy
-  has_many :movie, through: :character
+  has_many :characters, dependent: :destroy
   validates :name, presence: true
 end
